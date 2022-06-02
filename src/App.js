@@ -1,9 +1,11 @@
-import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 import { Header } from "./components/header/header";
 import Hero from "./components/hero/hero";
 import './App.css'
+import { AboutMe } from "./components/aboutMe/aboutMe";
+import { Skills } from "./components/skills/skill";
+import styled from 'styled-components';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <GlobalStyle />
       <Header />
       <Hero />
+      <AboutMe />
+      <Skills />
     </BrowserRouter>
   );
 }
@@ -28,7 +32,14 @@ const GlobalStyle = createGlobalStyle`
       text-decoration: none;
       
     }
+
+    :root {
+      --primary-color: #2b2b53;
+      --secondary-color: #c5c5c5;
+      --terciary-color: #ff6600;
+    }
 }
 `
+
 
 export default App;

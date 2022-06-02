@@ -1,17 +1,17 @@
-import React from 'react';
-import { HeroContainer, Picture, TextContainer } from './heroStyles';
+import { HeroContainer, TextContainer } from './styles';
 import { faLinkedin, faGithub, faGooglePlus } from '@fortawesome/free-brands-svg-icons'
 // import { faReact, faHtml5, faCss3, faSass } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Button, ButtonsContainer } from '../button/button';
-import styled from 'styled-components'
+import { ButtonsContainer } from '../button/button';
 import foto from '../../assets/imagens/foto.jpeg'
+import seta from '../../assets/imagens/seta_preta.png'
 import cv from '../../assets/files/CV_Gabriel_RS.pdf'
 import { Link } from 'react-router-dom';
+import { CurriculumButton, HireMe } from '../header/styles';
 
 function Hero(props) {
     return (
-        <div style={{backgroundColor: '#2b2b53', borderBottom: "3px solid #ff6600"}}>
+        <div style={{backgroundColor:'var(--primary-color)', borderBottom: "3px solid var(--terciary-color)"}}>
             <HeroContainer>
                 <TextContainer>
                     <div>
@@ -21,7 +21,7 @@ function Hero(props) {
                         <Link to={'https://github.com/Graben-el'}>
                             <FontAwesomeIcon icon={faGithub} className='icons github' />
                         </Link>
-                        <Link to={'gabrielsilvadev96@gmail.com'}>
+                        <Link to='#' onClick={() => window.location = 'mailto:gabrielsilvadev96@gmail.com'}>
                             <FontAwesomeIcon icon={faGooglePlus} className='icons' />
                         </Link>
                     </div>
@@ -32,19 +32,15 @@ function Hero(props) {
                         <HireMe >Fale Comigo</HireMe>
                     </ButtonsContainer>
                 </TextContainer>
-                <img src={foto} />
+                <img src={foto} className='foto'/>
+                <img src={seta} className='seta'/>
+
             </HeroContainer>
         </div>
     );
 }
 
-const CurriculumButton = styled(Button).attrs({as: 'a'})``
 
-const HireMe = styled(Button)`
-    &:hover {
-        background-color: #ff6600;
-        border: 3px solid #ff6600
-    }
-`
+
 
 export default Hero;

@@ -1,45 +1,15 @@
-import React from 'react';
-import styled from 'styled-components';
 import { NavLink } from './navlink';
+import logo from '../../assets/logo/logo.png'
+import { Container } from './styles';
 
 export const Header = props => {
     return (
-        <div style={{backgroundColor: '#d4d4d4', borderBottom: '3px solid #ff6600'}}>
+        <div style={{backgroundColor: '#c5c5c5', borderBottom: '3px solid #ff6600'}}>
             <Container>
-                <h1>GABRIEL R<span>.</span>S<span>.</span></h1>
+                <img src={logo} />
                 <NavLink />
             </Container>
         </div>
     );
 };
 
-const Container = styled.header`
-    display: flex;
-    justify-content:  space-around;
-    padding: 20px 60px;
-    background-color: #d4d4d4;
-    max-width: 1440px;
-    margin: 0 auto;
-    color: #000;
-    position: relative;
-    z-index: 1;
-
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: -6px;
-        width: 40%;
-        height: 5px;
-        border: 2px solid #ff6600;
-        background-color: #000;
-    }
-
-    h1 {
-        margin-right: 50px;
-
-        span {
-            color: #ff6600;
-        }
-    }
-
-`
