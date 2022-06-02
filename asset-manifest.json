@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.b2dab4d6.css",
-    "main.js": "/portfolio/static/js/main.3f219d76.js",
+    "main.js": "/portfolio/static/js/main.bf26b550.js",
     "static/media/foto.jpeg": "/portfolio/static/media/foto.fc956e0f8d932c88902e.jpeg",
     "static/media/CV_Gabriel_RS.pdf": "/portfolio/static/media/CV_Gabriel_RS.1a68067d036a7adc5c7c.pdf",
+    "static/media/logo.png": "/portfolio/static/media/logo.7bb7a4bef0821798219e.png",
     "index.html": "/portfolio/index.html",
-    "main.3f219d76.js.map": "/portfolio/static/js/main.3f219d76.js.map"
+    "main.bf26b550.js.map": "/portfolio/static/js/main.bf26b550.js.map"
   },
   "entrypoints": [
     "static/css/main.b2dab4d6.css",
-    "static/js/main.3f219d76.js"
+    "static/js/main.bf26b550.js"
   ]
 }
