@@ -7,6 +7,7 @@ import { Button, ButtonsContainer } from '../button/button';
 import styled from 'styled-components'
 import foto from '../../assets/imagens/foto.jpeg'
 import cv from '../../assets/files/CV_Gabriel_RS.pdf'
+import { Link } from 'react-router-dom';
 
 function Hero(props) {
     return (
@@ -14,12 +15,18 @@ function Hero(props) {
             <HeroContainer>
                 <TextContainer>
                     <div>
-                        <FontAwesomeIcon icon={faLinkedin} className='icons' />
-                        <FontAwesomeIcon icon={faGithub} className='icons github' />
-                        <FontAwesomeIcon icon={faGooglePlus} className='icons' />
+                        <Link to={'https://www.linkedin.com/in/gabriel-rsilva/'}>
+                            <FontAwesomeIcon icon={faLinkedin} className='icons' />
+                        </Link>
+                        <Link to={'https://github.com/Graben-el'}>
+                            <FontAwesomeIcon icon={faGithub} className='icons github' />
+                        </Link>
+                        <Link to={'gabrielsilvadev96@gmail.com'}>
+                            <FontAwesomeIcon icon={faGooglePlus} className='icons' />
+                        </Link>
                     </div>
                     <p> Olá, meu nome é <span>Gabriel</span></p>
-                    <p style={{ width: '100%' }}>Sou um Desenvolvedor Front-end Jr.</p>
+                    <p>Sou Desenvolvedor Front-end Jr.</p>
                     <ButtonsContainer>
                         <CurriculumButton href={cv} download>Baixar CV</CurriculumButton>
                         <HireMe >Fale Comigo</HireMe>

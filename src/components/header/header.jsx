@@ -21,6 +21,18 @@ const Container = styled.header`
     max-width: 1440px;
     margin: 0 auto;
     color: #000;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        width: 40%;
+        height: 5px;
+        border: 2px solid #ff6600;
+        background-color: #000;
+    }
 
     h1 {
         margin-right: 50px;
@@ -29,4 +41,5 @@ const Container = styled.header`
             color: #ff6600;
         }
     }
+
 `

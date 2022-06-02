@@ -8,6 +8,18 @@ export const HeroContainer = styled.section`
     justify-content: space-evenly;
     max-width: 1440px;
     margin: 0 auto;
+    position: relative;
+    
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        width: 40%;
+        height: 5px;
+        border: 2px solid #ff6600;
+        background-color: #000;
+    }
     
 
     img {
@@ -15,6 +27,8 @@ export const HeroContainer = styled.section`
         border: 5px solid #eff2f1;
         width: 350px;
         outline: 3px solid #ff6600;
+        
+        filter: drop-shadow(-5px 5px 4px  #0000007b);
     }
 `
 
@@ -43,6 +57,7 @@ export const TextContainer = styled.div`
         font-size: 26px;
         color: #ff6600;
         margin: 0 5px;
+        filter: drop-shadow(-4px 3px 1px #000);
     }
 
     .github {
@@ -59,5 +74,6 @@ export const TextContainer = styled.div`
         color: #ff6600;
         font-weight: bolder;
         font-size: 36px;
+        filter: drop-shadow(-3px 2px 1px  #000);
     }
 `

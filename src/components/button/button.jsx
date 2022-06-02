@@ -16,6 +16,7 @@ export const Button = styled.a`
         color: #262650;
         font-weight: 700;
         transform: scale(1.05);
+        box-shadow: -2px 2px 2px 2px #00000067;
     }
 `
 
