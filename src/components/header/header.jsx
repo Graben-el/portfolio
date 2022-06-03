@@ -4,7 +4,7 @@ import { Container } from './styles';
 
 export const Header = props => {
     return (
-        <div style={{backgroundColor: '#c5c5c5', borderBottom: '3px solid #ff6600'}}>
+        <div style={{backgroundColor: 'var(--secondary-color)'}}>
             <Container>
                 <img src={logo} />
                 <NavLink />

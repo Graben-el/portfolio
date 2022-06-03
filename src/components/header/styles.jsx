@@ -19,7 +19,7 @@ export const Container = styled.header`
     display: flex;
     justify-content:  space-around;
     align-items: center;
-    padding: 15px 60px;
+    padding: 20px 60px;
     background-color: var(--secondary-color);
     max-width: 1440px;
     margin: 0 auto;
@@ -27,20 +27,11 @@ export const Container = styled.header`
     position: relative;
     z-index: 1;
 
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: -11px;
-        width: 40%;
-        height: 5px;
-        border: 3px solid var(--terciary-color);
-        background-color: #000;
-        border-radius: 5px;
-    }
-
     img {
         width: 50px;
         margin-right: 50px;
+        
+        filter: drop-shadow(-5px 5px 4px  #0000007b);
     }
 
 `
