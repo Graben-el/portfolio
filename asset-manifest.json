@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e61beaf1.css",
-    "main.js": "/portfolio/static/js/main.58631465.js",
-    "static/media/agenciaxyz.gif": "/portfolio/static/media/agenciaxyz.59075c85661494874292.gif",
-    "static/media/codecafe.gif": "/portfolio/static/media/codecafe.6621b2cdf305d2077947.gif",
-    "static/media/electrum.gif": "/portfolio/static/media/electrum.d861a0442eb17dc0de10.gif",
-    "static/media/pokedex.gif": "/portfolio/static/media/pokedex.755f244c4c424ef7b721.gif",
-    "static/media/frontendmentor.gif": "/portfolio/static/media/frontendmentor.7d3eebd0994204b5f5ad.gif",
-    "static/media/githubapi.gif": "/portfolio/static/media/githubapi.41812eac50f8121b4eca.gif",
+    "main.css": "/portfolio/static/css/main.b6ac236f.css",
+    "main.js": "/portfolio/static/js/main.6b44a0b6.js",
+    "static/media/codecafe.gif": "/portfolio/static/media/codecafe.a35b190f65203f13035c.gif",
+    "static/media/agenciaxyz.gif": "/portfolio/static/media/agenciaxyz.2e7ad2f59bd38902246d.gif",
+    "static/media/meet.gif": "/portfolio/static/media/meet.5b06e8507bf9e959a966.gif",
+    "static/media/electrum.gif": "/portfolio/static/media/electrum.efd54a0649aea466092e.gif",
+    "static/media/pokedex.gif": "/portfolio/static/media/pokedex.1902a3f28025ad02dc7c.gif",
+    "static/media/githubapi.gif": "/portfolio/static/media/githubapi.c7ce799957763fcd62e9.gif",
+    "static/media/frontendmentor.gif": "/portfolio/static/media/frontendmentor.1315516c98628d595bbe.gif",
+    "static/media/advisor.gif": "/portfolio/static/media/advisor.d320bfd4c0a0b2f73b01.gif",
     "static/media/foto3.jpeg": "/portfolio/static/media/foto3.dc73b7e53d834293eb99.jpeg",
     "static/media/CV_Gabriel_RS.pdf": "/portfolio/static/media/CV_Gabriel_RS.1a68067d036a7adc5c7c.pdf",
     "static/media/logo.png": "/portfolio/static/media/logo.7bb7a4bef0821798219e.png",
     "static/media/ts1.png": "/portfolio/static/media/ts1.4e5ad2fc9841fef2b63d.png",
     "static/media/native1.png": "/portfolio/static/media/native1.1b19da492775f0bd0617.png",
     "index.html": "/portfolio/index.html",
-    "main.e61beaf1.css.map": "/portfolio/static/css/main.e61beaf1.css.map",
-    "main.58631465.js.map": "/portfolio/static/js/main.58631465.js.map"
+    "main.b6ac236f.css.map": "/portfolio/static/css/main.b6ac236f.css.map",
+    "main.6b44a0b6.js.map": "/portfolio/static/js/main.6b44a0b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.e61beaf1.css",
-    "static/js/main.58631465.js"
+    "static/css/main.b6ac236f.css",
+    "static/js/main.6b44a0b6.js"
   ]
 }
