@@ -1,0 +1,28 @@
+.swiper {
+    padding: 32px;
+    width: 80%;
+    height: 70%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ff6600;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #ff6600;
+    transition: 0.2s ease-in-out;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover,
+.swiper-pagination-bullet:hover {
+    transform: scale(1.3);
+}
+

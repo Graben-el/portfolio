@@ -1,6 +1,6 @@
 import { faReact, faHtml5, faCss3Alt, faSass, faGithub, faJs, faVuejs } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { SkillsContainer, Icons, IconsContainer, Img } from "./styles"
+import { SkillsContainer, Icons, IconsContainer } from "./styles"
 import { SectionsHeader } from '../sectionsHeader/sectionsHeader'
 import ts from '../../assets/imagens/ts1.png'
 import native from '../../assets/imagens/native1.png'

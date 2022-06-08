@@ -5,7 +5,7 @@ import Hero from "./components/hero/hero";
 import './App.css'
 import { AboutMe } from "./components/aboutMe/aboutMe";
 import { Skills } from "./components/skills/skill";
-import styled from 'styled-components';
+import { Projects } from "./components/projects/projects";
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
       <Hero />
       <AboutMe />
       <Skills />
+      <Projects />
     </BrowserRouter>
   );
 }
