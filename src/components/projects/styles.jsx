@@ -5,6 +5,8 @@ export const ProjectsContainer = styled(DefaultContainer)`
     height: 96vh;
     background-color: var(--secondary-color);
     filter: drop-shadow(1px 1px 1px black);
+    flex-direction: column;
+    justify-content: space-evenly;
 `
 
 export const Slide = styled.div`

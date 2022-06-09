@@ -57,7 +57,7 @@ export const HeroContainer = styled(BlueContainer)`
 `
 
 export const TextContainer = styled.div`
-    width: 48%;
+    margin-right: 130px;
     height: 50%;
     display: flex;
     color: #fff;

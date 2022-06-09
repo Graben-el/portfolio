@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Footer(props) {
+function Contact(props) {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function Footer(props) {
     );
 }
 
-export default Footer;
+export default Contact;
