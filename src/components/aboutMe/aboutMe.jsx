@@ -4,7 +4,7 @@ import { AboutMeContainer, PictureContainer, ResumeContainer, TextContainer } fr
 export const AboutMe = () => {
     return(
         <div style={{backgroundColor: '#c5c5c5'}}>
-            <AboutMeContainer>
+            <AboutMeContainer data-aos='fade-down'>
                 <SectionsHeader h1={'Sobre Mim'} h2={''}/>
                 <TextContainer>
                     <PictureContainer/>

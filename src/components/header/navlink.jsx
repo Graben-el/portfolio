@@ -1,13 +1,13 @@
-import { Link } from 'react-router-dom';
 import { Ul } from './styles';
+import { Link } from 'react-scroll'
 
 export const NavLink = props => {
     return (
         <Ul>
-            <li> <Link to='sobreMim' className='link'>Sobre Mim</Link></li>
-            <li> <Link to='comptencias' className='link'>Competências</Link></li>
-            <li> <Link to='projetos' className='link'>Projetos</Link></li>
-            <li> <Link to='projetos' className='link'>Contato</Link></li>
+            <li> <Link activeClass='active' spy={true} smooth={true} duration={2000} to='aboutme' className='aboutme'>Sobre Mim</Link></li>
+            <li> <Link activeClass='active' spy={true} smooth={true} duration={2000} to='skills' className='skil'>Competências</Link></li>
+            <li> <Link activeClass='active' spy={true} smooth={true} duration={2000} to='projects' className='projects'>Projetos</Link></li>
+            <li> <Link activeClass='active' spy={true} smooth={true} duration={2000} to='contact' className='contact'>Contato</Link></li>
         </Ul>
     )
 }

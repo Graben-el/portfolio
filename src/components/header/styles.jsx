@@ -92,5 +92,6 @@ export const HireMe = styled(Button)`
     &:hover {
         background-color: var(--terciary-color);
         border: 3px solid var(--terciary-color);
+        cursor: pointer
     }
 `

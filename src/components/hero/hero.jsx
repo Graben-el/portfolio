@@ -1,34 +1,38 @@
 import { Arrow, HeroContainer, Img, TextContainer } from './styles';
-import { faLinkedin, faGithub, faGooglePlus } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { ButtonsContainer } from '../button/button';
 import foto from '../../assets/imagens/foto3.jpeg'
 import seta from '../../assets/imagens/seta_preta.png'
 import cv from '../../assets/files/CV_Gabriel_RS.pdf'
-import { Link } from 'react-router-dom';
 import { CurriculumButton, HireMe } from '../header/styles';
+import { Social } from '../socialMedia/socialMedia';
+import Typical from 'react-typical'
+import { Link } from 'react-scroll';
 
 function Hero(props) {
     return (
 
         <HeroContainer>
             <TextContainer>
-                <div>
-                    <Link to={'https://www.linkedin.com/in/gabriel-rsilva/'}>
-                        <FontAwesomeIcon icon={faLinkedin} className='icons' />
-                    </Link>
-                    <Link to={'https://github.com/Graben-el'}>
-                        <FontAwesomeIcon icon={faGithub} className='icons github' />
-                    </Link>
-                    <Link to='#' onClick={() => window.location = 'mailto:gabrielsilvadev96@gmail.com'}>
-                        <FontAwesomeIcon icon={faGooglePlus} className='icons' />
-                    </Link>
-                </div>
-                <p> Olá, meu nome é <span>Gabriel</span></p>
-                <p>Sou Desenvolvedor Front-end Jr.</p>
+                <Social />
+                <p>
+                    Olá, meu nome é <span>Gabriel</span>
+                </p>
+                <p>
+                    <Typical
+                        loop={Infinity}
+                        steps={[
+                            'Desenvolvedor Front-end Jr 💻', 2000,
+                            'Apaixonado por Tecnologia! 💽', 1000,
+                            'Fanático por jogos de Luta! 🎮', 1000
+                        ]}
+                        wrapper='p'
+                    />
+                </p>
                 <ButtonsContainer>
                     <CurriculumButton href={cv} download>Baixar CV</CurriculumButton>
-                    <HireMe >Fale Comigo</HireMe>
+                    <Link activeClass='active' spy={true} smooth={true} duration={2000} to='contact' className='contact'>
+                        <HireMe >Fale Comigo</HireMe>
+                    </Link>
                 </ButtonsContainer>
             </TextContainer>
             <Img src={foto} className='foto' />

@@ -7,17 +7,36 @@ import { AboutMe } from "./components/aboutMe/aboutMe";
 import { Skills } from "./components/skills/skill";
 import { Projects } from "./components/projects/projects";
 import Contact from "./components/contact/contact";
+import React, { useEffect } from 'react';
+import { Element} from 'react-scroll'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 function App() {
+  useEffect(() => {
+    Aos.init({duration: 2500})
+  }, [])
+
   return (
     <BrowserRouter>
       <GlobalStyle />
       <Header />
-      <Hero />
-      <AboutMe />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Element name='hero' className="hero">
+        <Hero />
+      </Element>
+      <Element name='aboutme' className="aboutme">
+        <AboutMe />
+      </Element>
+      <Element name='skills' className="skills">
+        <Skills />
+      </Element>
+      <Element name='projects' className="projects">
+        <Projects />
+      </Element>
+      <Element name='contact' className="contact">
+        <Contact />
+      </Element>
+      
     </BrowserRouter>
   );
 }

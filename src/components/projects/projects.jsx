@@ -18,20 +18,22 @@ export const Projects = () => {
     }
 
     return (
-        <ProjectsContainer>
+        <ProjectsContainer data-aos='fade-down' style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
             <SectionsHeader h1={"Meus Projetos"} h2={''} className='header'/>
             <Slider settings={settings}>
                 {
-                    data.map(({ id, title, description, src }) => {
+                    data.map(({ id, title, description, src, url }) => {
                         return (
                             <SwiperSlide key={id}>
-                                <Slide>
-                                    <img src={src} alt={title} />
-                                    <SlideText>
-                                        <h2>{title}</h2>
-                                        <p>{description}</p>
-                                    </SlideText>
-                                </Slide>
+                                <a href={url} key={id} target='_blank'>
+                                    <Slide>
+                                        <img src={src} alt={title} />
+                                        <SlideText>
+                                            <h2>{title}</h2>
+                                            <p>{description}</p>
+                                        </SlideText>
+                                    </Slide>
+                                </a>
                             </SwiperSlide>
                         )
                     })

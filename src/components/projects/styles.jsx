@@ -7,6 +7,7 @@ export const ProjectsContainer = styled(DefaultContainer)`
     filter: drop-shadow(1px 1px 1px black);
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 `
 
 export const Slide = styled.div`
