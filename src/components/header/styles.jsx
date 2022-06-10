@@ -83,6 +83,7 @@ export const Ul = styled.ul`
         &:hover {
             font-weight: 700;
             transform: scale(1.1);
+            cursor: pointer;
         }
     }   
 `

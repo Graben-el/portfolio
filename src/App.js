@@ -11,6 +11,7 @@ import React, { useEffect } from 'react';
 import { Element} from 'react-scroll'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <BrowserRouter>
+    
       <GlobalStyle />
       <Header />
       <Element name='hero' className="hero">
@@ -36,7 +38,7 @@ function App() {
       <Element name='contact' className="contact">
         <Contact />
       </Element>
-      
+      <ScrollToTop smooth color="#f60" style={{backgroundColor: '#2b2b53', border: '1px solid #c5c5c5'}}/>
     </BrowserRouter>
   );
 }

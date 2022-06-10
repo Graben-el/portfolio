@@ -3,12 +3,14 @@ import { FadeContainer } from '../../styles';
 import { SectionsHeader } from '../sectionsHeader/sectionsHeader';
 import { Social } from '../socialMedia/socialMedia';
 import { ContactContainer, FormContainer } from './styles';
+import * as emailjs from 'emailjs-com';
 
-function Contact () {
+function Contact() {
     const [input, setInput] = useState({
         name: '',
         email: '',
-        message: ''
+        message: '',
+        subject: ''
     })
 
     const handleChange = (e) => {
@@ -19,9 +21,23 @@ function Contact () {
         )
     }
 
-    const handleSubmit = e => {
-        e.preventDefault()
-    }
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_zf3xdgs', 'template_iao4g5j', e.target, 'f8yCASWn9xcjEusJK')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
+        setInput({
+            name: '',
+            email: '',
+            message: '',
+            subject: ''
+        })
+    };
 
     return (
         <ContactContainer  >
@@ -32,7 +48,7 @@ function Contact () {
                         <h2>Entre em contato comigo </h2>
                         <Social />
                     </div>
-                    <form>
+                    <form onSubmit={sendEmail}>
                         <label>Nome
                             <input type='text' name='name' onChange={handleChange} value={input.name} />
                         </label>
@@ -40,9 +56,10 @@ function Contact () {
                             <input type='email' name='email' onChange={handleChange} value={input.email} />
                         </label>
                         <label className='textarea'>Mensagem
-                            <textarea name='message' onChange={handleChange} value={input.message} />
+                            <input type='text' name='subject' onChange={handleChange} value={input.subject} placeholder='Assunto' className='subject' />
+                            <textarea name='message' onChange={handleChange} value={input.message} placeholder='Mensagem' />
                         </label>
-                        <input type='submit' rows='50' className='submit' onClick={handleSubmit} />
+                        <input type='submit' className='submit' value={'Enviar'} />
                     </form>
                 </FormContainer>
             </FadeContainer>

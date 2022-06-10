@@ -10,14 +10,13 @@ import { Link } from 'react-scroll';
 
 function Hero(props) {
     return (
-
         <HeroContainer>
             <TextContainer>
                 <Social />
                 <p>
                     Olá, meu nome é <span>Gabriel</span>
                 </p>
-                <p>
+                
                     <Typical
                         loop={Infinity}
                         steps={[
@@ -27,7 +26,7 @@ function Hero(props) {
                         ]}
                         wrapper='p'
                     />
-                </p>
+               
                 <ButtonsContainer>
                     <CurriculumButton href={cv} download>Baixar CV</CurriculumButton>
                     <Link activeClass='active' spy={true} smooth={true} duration={2000} to='contact' className='contact'>

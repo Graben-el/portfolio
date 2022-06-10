@@ -24,29 +24,24 @@ export const FormContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* background-color: #ffff; */
-    /* border: 1px solid white; */
     width: 80%;
     max-width: 1200px;
     height: 70%;
     background-size: cover;
     position: relative;
     border-radius: 10px;
-    /* border: 2px solid #f60; */
-    /* filter: drop-shadow(-4px 4px 1px #00000076); */
     
     form {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #f60;
-        border: 1px solid var(--primary-color);
+        background-color: #ff6600;
+        border: 1px solid var(--secondary-color);
         width: 50%;
         height: 90%;
-        /* position: absolute; */
         bottom: 4%;
         right: 3%;
-        padding: 20px 15px 0;
+        padding: 20px 15px;
         border-radius: 10px;
         filter: drop-shadow(-3px 3px 1px #0000002b);
 
@@ -58,13 +53,13 @@ export const FormContainer = styled.div`
             width: 90%;
             color: #c5c5c5;
             filter: drop-shadow(-2px 2px 1px #00000088);
+            margin-top: 10px;
         }
         input, textarea {
             padding: 10px;
             outline: none;
             border-radius: 5px;
             border: none;
-            margin: 0 0 20px;
             width: 100%;
             resize: none;
             overflow: auto;
@@ -73,16 +68,35 @@ export const FormContainer = styled.div`
 
         textarea{
             height: 100%;
+            margin: 0;
         }
 
         .textarea{
-            height: 50%
+            height: 100%
+        }
+
+        .subject {
+            margin: 0 0 10px;
         }
 
         .submit {
-            width: 50%;
-            margin-top: 20px;
+            width: 40%;
+            height: 60px;
+            margin-top: 10px;
             filter: drop-shadow(-2px 2px 1px #00000088);
+            overflow: hidden;
+            color: #c5c5c5;
+            font-weight: bold;
+            background-color: transparent;
+            border: 3px solid #c5c5c5;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #c5c5c5;
+                color: #f60;
+                transform: scale(1.05);
+            }
         }
     }
 
@@ -90,7 +104,6 @@ export const FormContainer = styled.div`
         
         left: 17%;
         top: 3%;
-        /* background-color: black; */
         width: 35%;
         display: flex;
         align-items: center;
