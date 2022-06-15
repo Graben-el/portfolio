@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { keyframes } from 'styled-components';
 import { Button } from '../button/button';
 
-const mostrarLinha= keyframes`
+const mostrarLinha = keyframes`
     0% {
         width: 0%;
         
@@ -25,7 +25,12 @@ export const Container = styled.header`
     margin: 0 auto;
     color: #000;
     position: relative;
-    z-index: 1;
+
+    @media (max-width: 907px) {
+        width: 100%;
+        padding: 20px 40px;
+        justify-content: space-between;
+    }
 
     img {
         width: 50px;
@@ -36,11 +41,109 @@ export const Container = styled.header`
 
 `
 
+
+export const NavContainer = styled.nav`
+    #react-burger-menu-btn {
+        width: 70px;
+    }
+
+    .bm-burger-button {
+        width: 45px;
+        height: 30px;
+        display: none;
+        position: relative;
+        
+        
+        @media (max-width: 907px) {
+            display: block;
+        }
+    }
+    
+    .bm-burger-bars {
+        border-radius: 10px;
+        background: #000;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        left: auto;
+    }
+
+    /* Color/shape of burger icon bars on hover*/
+    .bm-burger-bars-hover {
+        background: #f60;
+    }
+
+    /* Position and sizing of clickable cross button */
+    .bm-cross-button {
+        height: 24px;
+        width: 24px;
+    }
+
+    /* Color/shape of close button cross */
+    .bm-cross {
+        background: #f60;
+    }
+
+    /*
+    Sidebar wrapper styles
+    Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+    */
+    .bm-menu-wrap {
+        position: absolute;
+        right: 0%;
+    }
+
+    /* General sidebar styles */
+    .bm-menu {
+        background: #373a47;
+        padding: 2.5em 1.5em 0;
+        font-size: 1.15em;
+    }
+
+    /* Morph shape necessary with bubble or elastic */
+    .bm-morph-shape {
+        fill: #373a47;
+    }
+
+    /* Wrapper for item list */
+    .bm-item-list {
+        color: #b8b7ad;
+        padding: 0.8em;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    /* Individual item */
+    .bm-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+
+    /* Styling of overlay */
+    .bm-overlay {
+        background: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 0%;
+        overflow-x: hidden;
+    }
+`
 export const Ul = styled.ul`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-right: 60px;
+    gap: 40px;
+
+    @media (max-width: 907px) {
+        display: none;
+    }
 
     li {
         margin-left: 50px;
@@ -87,7 +190,7 @@ export const Ul = styled.ul`
         }
     }   
 `
-export const CurriculumButton = styled(Button).attrs({as: 'a'})``
+export const CurriculumButton = styled(Button).attrs({ as: 'a' })``
 
 export const HireMe = styled(Button)`
     &:hover {
