@@ -62,7 +62,11 @@ const GlobalStyle = createGlobalStyle`
       --secondary-color: #c5c5c5;
       --terciary-color: #ff6600;
     }
-}
+  }
+
+  html {
+    overflow-x: hidden;
+  }
 `
 
 
