@@ -9,7 +9,7 @@ export const SkillsContainer = styled(BlueContainer)`
     align-items: center;
 
     @media (max-width: 768px) {
-        height: 80vh;
+        height: 100vh;
     }
 
     @media (max-width: 728px) {
@@ -19,7 +19,6 @@ export const SkillsContainer = styled(BlueContainer)`
             min-width: 50%;   
             max-width: 100%; 
             width: 50%; 
-            
         }
         
     }
@@ -56,7 +55,6 @@ export const SkillsContainer = styled(BlueContainer)`
 
     .learning {
         max-width: 850px;
-        min-width: 800px;
         margin-top: 50px;
     }
     
@@ -69,8 +67,6 @@ export const IconsContainer = styled.div`
     max-width: 640px;
     min-width: 500px;
     width: 50%;
-
-    
 
     .ts,
     .native {
@@ -91,7 +87,7 @@ export const IconsContainer = styled.div`
         min-width: 200px;
     }
     @media (max-width: 728px) {
-        min-width: 50%;   
+        min-width: 100%;   
         max-width: 100%;   
     }
 `
@@ -117,7 +113,6 @@ export const Icons = styled.div`
         }
 
     @media (max-width: 816px) {
-            flex-wrap: nowrap;
             font-size: 0.8em;
         }
     }
