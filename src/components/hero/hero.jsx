@@ -8,12 +8,12 @@ import { Social } from '../socialMedia/socialMedia';
 import Typical from 'react-typical'
 import { Link } from 'react-scroll';
 
-function Hero(props) {
+function Hero() {
     return (
         <HeroContainer>
             <TextContainer>
                 <Social />
-                <p>
+                <p className=''>
                     Olá, meu nome é <span>Gabriel</span>
                 </p>
                 

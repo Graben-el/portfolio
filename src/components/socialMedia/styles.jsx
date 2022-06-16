@@ -15,6 +15,10 @@ export const IconsContainer = styled.div`
             animation: ${Bounce} 1s infinite;
             transform: scale(1.1);
         }
+
+        @media (max-width: 907px) {
+            font-size: 32px;
+        }
     }
 
     .github {

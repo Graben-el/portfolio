@@ -54,6 +54,15 @@ export const Arrow = styled.img`
 
 export const HeroContainer = styled(BlueContainer)`
     height: 89vh;
+
+    @media (max-width: 907px) {
+        flex-direction: column;
+        height: 87vh;
+
+        .foto {
+            display: none;
+        }
+    }
 `
 
 export const TextContainer = styled.div`
@@ -66,6 +75,12 @@ export const TextContainer = styled.div`
     align-items: center;
     flex-direction: column;
     text-align: center;
+
+    @media (max-width: 907px) {
+        margin-right: 0;
+        min-width: 100%;
+        justify-content: space-evenly;
+    }
 
     p {
         font-weight: bold;

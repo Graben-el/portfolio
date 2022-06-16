@@ -6,6 +6,11 @@ export const ContactContainer = styled(BlueContainer)`
     background-color: var(--primary-color);
     flex-direction: column;
 
+    @media (max-width: 900px) {
+        height: fit-content;
+        padding-bottom: 40px;
+    }
+
     h1, h2 {
         color: #c5c5c5;
         filter: drop-shadow(-2px 2px 1px #000);
@@ -31,6 +36,31 @@ export const FormContainer = styled.div`
     position: relative;
     border-radius: 10px;
     
+    @media (max-width: 1000px) {
+        width: 100%;
+        textarea {
+            min-height: 200px;
+        }
+    }
+
+    @media (max-width: 765px) {
+        flex-direction:  column;
+        
+        h2 {
+            display: none;
+        }
+
+        form {
+            min-width: 90%;
+            min-height: 500px;
+        }
+
+        textarea {
+            min-height: 300px;
+        }
+        
+    }
+    
     form {
         display: flex;
         flex-direction: column;
@@ -39,8 +69,6 @@ export const FormContainer = styled.div`
         border: 1px solid var(--secondary-color);
         width: 50%;
         height: 90%;
-        bottom: 4%;
-        right: 3%;
         padding: 20px 15px;
         border-radius: 10px;
         filter: drop-shadow(-3px 3px 1px #0000002b);

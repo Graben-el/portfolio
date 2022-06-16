@@ -28,7 +28,7 @@ export const Container = styled.header`
 
     @media (max-width: 907px) {
         width: 100%;
-        padding: 20px 40px;
+        padding: 20px 20px;
         justify-content: space-between;
     }
 
@@ -44,45 +44,42 @@ export const Container = styled.header`
 
 export const NavContainer = styled.nav`
     #react-burger-menu-btn {
-        width: 70px;
+        width: 70px  ;  
     }
 
     .bm-burger-button {
-        width: 45px;
-        height: 30px;
-        display: none;
-        position: relative;
+        width: 45px !important; 
+        height: 30px !important; 
+        display: none !important; 
+        position: relative !important; 
         
         
         @media (max-width: 907px) {
-            display: block;
+            display: block !important; 
         }
     }
     
     .bm-burger-bars {
-        border-radius: 10px;
-        background: #000;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        right: 0;
-        left: auto;
+        border-radius: 10px !important; 
+        background: #000; 
+        width: 100% !important;
+        position: absolute !important; 
     }
 
     /* Color/shape of burger icon bars on hover*/
     .bm-burger-bars-hover {
-        background: #f60;
+        background: #f60; 
     }
 
     /* Position and sizing of clickable cross button */
     .bm-cross-button {
-        height: 24px;
-        width: 24px;
+        height: 24px; 
+        width: 24px; 
     }
 
     /* Color/shape of close button cross */
     .bm-cross {
-        background: #f60;
+        background: #f60; 
     }
 
     /*
@@ -90,49 +87,50 @@ export const NavContainer = styled.nav`
     Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
     */
     .bm-menu-wrap {
-        position: absolute;
-        right: 0%;
+        position: absolute ; 
+        right: 0% !important; 
+        top: 0 !important;
     }
 
     /* General sidebar styles */
     .bm-menu {
-        background: #373a47;
-        padding: 2.5em 1.5em 0;
-        font-size: 1.15em;
+        background: #373a47; 
+        padding: 2.5em 1.5em 0; 
+        font-size: 1.5em; 
     }
 
     /* Morph shape necessary with bubble or elastic */
     .bm-morph-shape {
-        fill: #373a47;
+        fill: #373a47; 
     }
 
     /* Wrapper for item list */
     .bm-item-list {
-        color: #b8b7ad;
-        padding: 0.8em;
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        text-align: center;
+        color: #b8b7ad !important; 
+        padding: 0.8em; 
+        display: flex !important; 
+        justify-content: space-around !important; 
+        align-items: flex-start !important; 
+        text-align: center !important; 
     }
 
     /* Individual item */
     .bm-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 100%;
+        display: flex !important; 
+        flex-direction: column; 
+        gap: 50px !important; 
+        align-items: center; 
+        height: 100%; 
     }
 
     /* Styling of overlay */
     .bm-overlay {
-        background: rgba(0, 0, 0, 0.3);
-        position: absolute;
-        width: 100%;
-        top: 0;
-        right: 0%;
-        overflow-x: hidden;
+        background: rgba(0, 0, 0, 0.3); 
+        position: absolute; 
+        width: 100%; 
+        top: 0; 
+        right: 0%; 
+        overflow-x: hidden; 
     }
 `
 export const Ul = styled.ul`
@@ -190,12 +188,34 @@ export const Ul = styled.ul`
         }
     }   
 `
-export const CurriculumButton = styled(Button).attrs({ as: 'a' })``
+export const CurriculumButton = styled(Button).attrs({ as: 'a' })`
+    @media (max-width: 907px) {
+        &:active {
+            background-color: #c5c5c5;
+            border: 3px solid #c5c5c5;
+            color: #262650;
+            font-weight: 700;
+            transform: scale(1.05);
+            box-shadow: -2px 2px 2px 2px #00000067;
+        }
+    }
+`
 
 export const HireMe = styled(Button)`
     &:hover {
         background-color: var(--terciary-color);
         border: 3px solid var(--terciary-color);
         cursor: pointer
+    }
+
+    @media (max-width: 907px) {
+        &:active {
+            background-color: var(--terciary-color);
+            border: 3px solid var(--terciary-color);
+            color: #262650;
+            font-weight: 700;
+            transform: scale(1.05);
+            box-shadow: -2px 2px 2px 2px #00000067;
+        }
     }
 `

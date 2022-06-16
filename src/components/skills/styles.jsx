@@ -7,7 +7,27 @@ export const SkillsContainer = styled(BlueContainer)`
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    
+
+    @media (max-width: 768px) {
+        height: 80vh;
+    }
+
+    @media (max-width: 728px) {
+        height: 130vh;
+
+        .learning div{
+            min-width: 50%;   
+            max-width: 100%; 
+            width: 50%; 
+            
+        }
+        
+    }
+
+    @media (max-width: 412px) {
+        height: 145vh;
+    }
+
     h1, h3 {
         color: var(--secondary-color);
         filter: drop-shadow(-2px 2px 1px #000);
@@ -39,6 +59,7 @@ export const SkillsContainer = styled(BlueContainer)`
         min-width: 800px;
         margin-top: 50px;
     }
+    
 `
 
 export const IconsContainer = styled.div`
@@ -48,6 +69,8 @@ export const IconsContainer = styled.div`
     max-width: 640px;
     min-width: 500px;
     width: 50%;
+
+    
 
     .ts,
     .native {
@@ -66,6 +89,10 @@ export const IconsContainer = styled.div`
     .native {
         max-width: 400px;
         min-width: 200px;
+    }
+    @media (max-width: 728px) {
+        min-width: 50%;   
+        max-width: 100%;   
     }
 `
 
@@ -87,6 +114,11 @@ export const Icons = styled.div`
         &:hover {
             transform: scale(1.2);
             animation: ${Bounce} 3s infinite;
+        }
+
+    @media (max-width: 816px) {
+            flex-wrap: nowrap;
+            font-size: 0.8em;
         }
     }
     

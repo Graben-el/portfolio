@@ -18,6 +18,8 @@ export const Button = styled.a`
         transform: scale(1.05);
         box-shadow: -2px 2px 2px 2px #00000067;
     }
+
+    
 `
 
 export const ButtonsContainer = styled.div`
