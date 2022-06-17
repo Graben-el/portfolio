@@ -8,6 +8,12 @@ export const SkillsContainer = styled(BlueContainer)`
     justify-content: start;
     align-items: center;
 
+    @media (min-width: 820px) {
+        .learning div {
+            flex-wrap: nowrap;
+        }
+    }
+
     @media (max-width: 768px) {
         height: 100vh;
     }

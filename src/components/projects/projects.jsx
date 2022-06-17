@@ -1,5 +1,5 @@
 import { Slider } from "./slider/slider"
-import { Container, Mobile, ProjectsContainer, Slide, SlideText } from "./styles"
+import { DesktopContainer, MobileContainer, ProjectsContainer, Slide, SlideText, SlideTextMobile } from "./styles"
 import 'swiper/css/bundle'
 import './slider/slider.css'
 import { SwiperSlide } from "swiper/react"
@@ -14,13 +14,15 @@ export const Projects = () => {
         pagination: {
             clickable: true
         },
-        loop: true
+        loop: true,
+        centeredSlides: true,
+        centeredSlidesBounds: true
     }
 
     return (
-        <ProjectsContainer  style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-            <Container  data-aos='fade-down'>
-                <SectionsHeader h1={"Meus Projetos"} h2={''} className='header'/>
+        <ProjectsContainer style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <DesktopContainer data-aos='fade-down' className='desktop'>
+                <SectionsHeader h1={"Meus Projetos"} h2={''} />
                 <Slider settings={settings} >
                     {
                         data.map(({ id, title, description, src, url }) => {
@@ -40,9 +42,30 @@ export const Projects = () => {
                         })
                     }
                 </Slider>
-
-                <Mobile />
-            </Container>
+            </DesktopContainer>
+            
+            <MobileContainer data-aos='fade-down'  >
+                <SectionsHeader h1={"Meus Projetos"} h2={''} className='header' />
+                <Slider settings={settings} >
+                    {
+                        data.map(({ id, title, description, mobile, url }) => {
+                            return (
+                                <SwiperSlide key={id}>
+                                    <a href={url} key={id} target='_blank'>
+                                        <Slide style={{ width: 'auto', maxWidth: 'auto', }}>
+                                            <img src={mobile} alt={title} />
+                                            <SlideTextMobile>
+                                                <h2>{title}</h2>
+                                                <p>{description}</p>
+                                            </SlideTextMobile>
+                                        </Slide>
+                                    </a>
+                                </SwiperSlide>
+                            )
+                        })
+                    }
+                </Slider>
+            </MobileContainer>
         </ProjectsContainer>
     )
 }

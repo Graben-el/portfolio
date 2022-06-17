@@ -10,7 +10,7 @@ export const ProjectsContainer = styled(DefaultContainer)`
     align-items: center;
 `
 
-export const Container = styled.div`
+export const DesktopContainer = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -18,6 +18,23 @@ export const Container = styled.div`
     height: 100%;
     width: 100%;
     max-width: 1440px;
+
+    @media (max-width: 900px) {
+        display: none;
+    }
+`
+export const MobileContainer = styled.div`
+    display: none;
+
+    @media (max-width: 900px) {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 90%;
+        max-width: 100%;
+    }
 `
 
 export const Slide = styled.div`
@@ -51,10 +68,21 @@ export const SlideText = styled.div`
     background-color: #2b2b53b9;
     border: 1px solid #f60;
     color: white;
-
 `
 
-export const Mobile = styled.div`
-    display: none;
-
+export const SlideTextMobile = styled.div`
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 2% 4%;
+    height: 20%;
+    min-height: 200px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    bottom: 0;
+    background-color: #2b2b53b9;
+    border: 1px solid #f60;
+    color: white;  
 `

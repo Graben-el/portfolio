@@ -1,14 +1,17 @@
 .swiper {
-    padding: 0 0px 0 50px;
     width: 90%;
-    height: 70%;
+    height: auto;
     margin: 0 auto;
+
+    
 }
 
 .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: auto;
+    width: auto;
 }
 
 .swiper-slide.swiper-slide-active {
@@ -17,9 +20,13 @@
     padding: 0;
 }
 
+.swiper-pagination-bullet {
+    opacity: 0;
+}
 .swiper-pagination-bullet-active {
     background-color: #ff6600;
     border: 1px solid #2b2b53;
+    opacity: 0;
 }
 
 
