@@ -21,7 +21,7 @@ export const Projects = () => {
 
     return (
         <ProjectsContainer style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <DesktopContainer data-aos='fade-down' className='desktop'>
+            <DesktopContainer data-aos='fade-up' className='desktop'>
                 <SectionsHeader h1={"Meus Projetos"} h2={''} />
                 <Slider settings={settings} >
                     {

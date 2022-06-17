@@ -8,7 +8,7 @@ import native from '../../assets/imagens/native1.png'
 export const Skills = () => {
     return (
         <SkillsContainer >
-            <div data-aos='fade-down'  style={{display: 'flex', flexDirection: 'column', alignItems: 'center', maxWidth: '100%'}}>
+            <div data-aos='fade-up'  style={{display: 'flex', flexDirection: 'column', alignItems: 'center', maxWidth: '100%'}}>
                 <SectionsHeader h1={'Competências'} h2={''}/>
                 <IconsContainer>
                     <h3>Atualmente Domino<span>:</span></h3>

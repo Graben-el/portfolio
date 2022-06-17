@@ -13,7 +13,7 @@ function Hero() {
         <HeroContainer>
             <TextContainer>
                 <Social />
-                <p className=''>
+                <p >
                     Olá, meu nome é <span>Gabriel</span>
                 </p>
                 

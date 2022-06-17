@@ -5,7 +5,7 @@ export const AboutMe = () => {
     return(
         <div style={{backgroundColor: '#c5c5c5'}}>
             
-            <AboutMeContainer data-aos='fade-down' >
+            <AboutMeContainer data-aos='fade-up' >
                 <SectionsHeader h1={'Sobre Mim'} h2={''}/>
                 <TextContainer>
                     <PictureContainer/>

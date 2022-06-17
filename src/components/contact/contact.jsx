@@ -24,6 +24,8 @@ function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
 
+       
+
         emailjs.sendForm('service_zf3xdgs', 'template_iao4g5j', e.target, 'f8yCASWn9xcjEusJK')
             .then((result) => {
                 console.log(result.text);
@@ -37,11 +39,13 @@ function Contact() {
             message: '',
             subject: ''
         })
+
+        alert('E-mail enviado com sucesso. Agradeço o contato!')
     };
 
     return (
         <ContactContainer  >
-            <FadeContainer data-aos='fade-down'>
+            <FadeContainer data-aos='fade-up'>
                 <SectionsHeader className='header' h1={'Contato'} h2={'Vamos conversar?'} style={{ color: '#c5c5c5' }} />
                 <FormContainer>
                     <div className="social">
