@@ -3,7 +3,7 @@ import { BlueContainer } from '../../styles';
 import { Bounce } from '../hero/styles';
 
 export const SkillsContainer = styled(BlueContainer)`
-    height: 98vh;
+    height: 130vh;
     flex-direction: column;
     justify-content: start;
     align-items: center;
@@ -15,7 +15,7 @@ export const SkillsContainer = styled(BlueContainer)`
     }
 
     @media (max-width: 768px) {
-        height: 100vh;
+        height: 120vh;
     }
 
     @media (max-width: 728px) {
