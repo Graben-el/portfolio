@@ -19,7 +19,7 @@ export const Skills = () => {
                         <FontAwesomeIcon title='JavaScript' icon={faJs} className='icon'/>
                         <FontAwesomeIcon title='React JS' icon={faReact} className='icon odd'/>
                         <FontAwesomeIcon title='Git/Github' icon={faGithub} className='icon'/>
-                        <img src={ts} className='ts odd' title='TypeScript'/>
+                        <img src={ts} className='icon ts odd' title='TypeScript'/>
                     </Icons>
                 </IconsContainer>
                 <IconsContainer className='learning' style={{maxWidth: '100%'}}>
